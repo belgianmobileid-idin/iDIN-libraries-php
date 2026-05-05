@@ -4,25 +4,25 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "BankId\\Merchant\\Library\\": ["library"]
+      "BankId\\Merchant\\": ["src"]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "BankId\\Merchant\\Library\\": ["library","library.tests"]
+      "BankId\\Merchant\\Tests\\": ["tests"]
     }
   },
   "require": {
     "php": "^8.3",
-    "robrichards/xmlseclibs": "^3.1.3"
+    "robrichards/xmlseclibs": "^3.1.3",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "12"
-  },
-  "suggest": {
-    "ext/curl": "cURL extension",
-    "ext/openssl": "OpenSSL extension"
+    "phpunit/phpunit": "^12"
   },
   "type": "library",
-  "version": "1.3.0"
+  "version": "2.0.0"
 }

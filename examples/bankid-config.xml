@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <appSettings>
+        <add key="BankId.Merchant.MerchantID" value="0123456789" />
+        <add key="BankId.Merchant.SubID" value="0" />
+        <add key="BankId.Merchant.ReturnUrl" value="https://my.shop/callback" />
+        <add key="BankId.Acquirer.DirectoryUrl" value="https://bank/directory" />
+        <add key="BankId.Acquirer.TransactionUrl" value="https://bank/transaction" />
+        <add key="BankId.Acquirer.StatusUrl" value="https://bank/status" />
+        <add key="BankId.Merchant.Certificate.File" value="certs/merchant.p12" />
+        <add key="BankId.Merchant.Certificate.Password" value="password" />
+        <add key="BankId.RoutingService.Certificate.File" value="certs/routing.cer" />
+        <add key="BankId.RoutingService.Certificate.File.Alternative" value="certs/routing.alternative.cer" />
+        <add key="BankId.SAML.Certificate.File" value="certs/saml.p12" />
+        <add key="BankId.SAML.Certificate.Password" value="password" />
+        <add key="BankId.Logs.Enabled" value="true" />
+        <add key="BankId.Logs.Location" value="../Logs" />
+        <add key="BankId.Logs.Pattern" value="%Y-%M-%D" />
+        <add key="BankId.Logs.FileName" value="iDIN.txt" />
+        <add key="BankId.ServiceLogs.Enabled" value="true" />
+        <add key="BankId.ServiceLogs.Location" value="../ServiceLogs" />
+        <add key="BankId.ServiceLogs.Pattern" value="%Y-%M-%D/%h%m%s.%f-%a.xml" />
+    </appSettings>
+</configuration>
