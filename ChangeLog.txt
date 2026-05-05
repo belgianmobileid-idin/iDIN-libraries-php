@@ -1,3 +1,22 @@
+[v2.0.0]
+* Namespace changed from BankId\Merchant\Library to BankId\Merchant
+* PHP 8.3+ features: backed enums, constructor promotion, readonly properties, strict types
+* Removed 350+ auto-generated Schema PHP classes, replaced with direct DOMDocument XML building
+* Flattened inheritance: removed all Internal/ base classes
+* Inlined HTTP (curl) in Communicator, removed IMessenger/Messenger
+* Removed singleton Configuration pattern, replaced with constructor + factory methods
+* New directory structure: src/ with Communicator, Configuration, Contract, Enum, Exception, Logger, Request, Resources, Response, Saml, Validation, Xml
+* Added NullLogger, XmlValidator, XmlSecurity as separate classes
+* Enums: TransactionStatus, AssuranceLevel, SamlStatusCode, ServiceId (constants)
+* Response classes parse XML in constructor with public typed properties
+* ErrorResponse with factory methods: fromXml(), fromException(), fromSamlStatus(), fromMessage()
+* XSS protection in example website with htmlspecialchars
+* Example website upgraded to Bootstrap 5 via CDN
+* Shared partials: _error.php, _merchant_fields.php
+* Tests migrated to BankId\Merchant\Tests namespace with PHPUnit 12 attributes
+* Added comprehensive README with usage examples
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 [V1.3.0]
 * Update support for php 8.3
 ---------------------------------------------------------------------------------------------------------------------------------------------
